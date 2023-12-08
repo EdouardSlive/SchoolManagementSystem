@@ -8,13 +8,11 @@ import lombok.ToString;
  */
 
 public class Department {
-    private String id;
-    private int nextid;
-    private String departmentName;
+    public String id;
+    public String departmentName;
 
-    public Department(String id, int nextid, String departmentName) {
+    public Department(String departmentName) {
         this.id = id;
-        this.nextid = nextid;
         this.departmentName = departmentName;
     }
 }

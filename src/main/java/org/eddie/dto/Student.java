@@ -7,23 +7,24 @@ import lombok.ToString;
  * Java class for a student
  */
 public class Student {
-    private String name;
-    private String fname;
-    private String lname;
-    private String[] courses = new String[5];
-    private int courseNum;
-    private String Id;
+    public String name;
+    public String fname;
+    public String lname;
+    public String[] courses = new String[5];
+    public int courseNum;
+    public String id;
     private int nextId;
     private Department department;
 
-    public Student(String name, String fname, String lname, String[] courses, int courseNum, String id, int nextId, Department department) {
+    public Student(String fname, String lname, Department department) {
         this.name = name;
         this.fname = fname;
         this.lname = lname;
         this.courses = courses;
         this.courseNum = courseNum;
-        Id = id;
+        this.id = id;
         this.nextId = nextId;
         this.department = department;
     }
+
 }

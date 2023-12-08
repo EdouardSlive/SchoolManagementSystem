@@ -8,13 +8,14 @@ import lombok.ToString;
 @ToString
 public class Course {
     private double credit;
-    private String id;
+    public String id;
     private String[] students = new String[30];
-    private Department department;
+    public Department department;
     private int studentNum;
     private Teacher teacher;
+    public String courseName;
 
-    public Course(double credit, String id, String[] students, Department department, int studentNum, Teacher teacher) {
+    public Course(String courseName, double credit, Department department) {
         this.credit = credit;
         this.id = id;
         this.students = students;

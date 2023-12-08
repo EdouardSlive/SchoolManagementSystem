@@ -7,13 +7,13 @@ import lombok.ToString;
  * Class for a teacher
  */
 public class Teacher {
-    private String name;
-    private String lname;
-    private String fname;
-    private Department department;
-    private String id;
+    public String name;
+    public String lname;
+    public String fname;
+    public Department department;
+    public String id;
 
-    public Teacher(String name, String lname, String fname, Department department, String id) {
+    public Teacher(String fname, String lname, Department department) {
         this.name = name;
         this.lname = lname;
         this.fname = fname;
