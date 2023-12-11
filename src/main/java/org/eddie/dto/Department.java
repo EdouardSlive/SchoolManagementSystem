@@ -11,8 +11,11 @@ public class Department {
     public String id;
     public String departmentName;
 
+    /**
+     * Constructor for the department
+     * @param departmentName department's name
+     */
     public Department(String departmentName) {
-        this.id = id;
         this.departmentName = departmentName;
     }
 }

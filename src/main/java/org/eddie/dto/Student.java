@@ -5,25 +5,26 @@ import lombok.ToString;
 @ToString
 /**
  * Java class for a student
+ *
  */
 public class Student {
     public String name;
     public String fname;
     public String lname;
-    public String[] courses = new String[5];
+    public Course[] courses = new Course[5];
     public int courseNum;
     public String id;
-    private int nextId;
-    private Department department;
+    public String department;
 
-    public Student(String fname, String lname, Department department) {
-        this.name = name;
+    /**
+     * Constructor for the student
+     * @param fname student's first name
+     * @param lname student's last name
+     * @param department student's department
+     */
+    public Student(String fname, String lname, String department) {
         this.fname = fname;
         this.lname = lname;
-        this.courses = courses;
-        this.courseNum = courseNum;
-        this.id = id;
-        this.nextId = nextId;
         this.department = department;
     }
 

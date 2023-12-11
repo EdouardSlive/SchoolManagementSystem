@@ -7,20 +7,23 @@ import lombok.ToString;
  */
 @ToString
 public class Course {
-    private double credit;
+    public double credit;
     public String id;
-    private String[] students = new String[30];
-    public Department department;
-    private int studentNum;
-    private Teacher teacher;
+    public String[] students = new String[30];
+    public String department;
+    public int studentNum;
+    public Teacher teacher;
     public String courseName;
 
-    public Course(String courseName, double credit, Department department) {
+    /**
+     * Constructor for the course
+     * @param courseName course's name
+     * @param credit course's number of credits
+     * @param department course's department
+     */
+    public Course(String courseName, double credit, String department) {
+        this.courseName = courseName;
         this.credit = credit;
-        this.id = id;
-        this.students = students;
         this.department = department;
-        this.studentNum = studentNum;
-        this.teacher = teacher;
     }
 }

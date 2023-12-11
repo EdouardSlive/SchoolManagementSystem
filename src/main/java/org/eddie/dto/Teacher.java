@@ -10,14 +10,18 @@ public class Teacher {
     public String name;
     public String lname;
     public String fname;
-    public Department department;
+    public String department;
     public String id;
 
-    public Teacher(String fname, String lname, Department department) {
-        this.name = name;
+    /**
+     * Constructor for the teacher
+     * @param fname teacher's first name
+     * @param lname teacher's last name
+     * @param department teacher's department
+     */
+    public Teacher(String fname, String lname, String department) {
         this.lname = lname;
         this.fname = fname;
         this.department = department;
-        this.id = id;
     }
 }
